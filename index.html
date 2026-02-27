@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 별자리 운세 ✨</title>
+    <!-- 폰트 적용: 구글 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Cosmic Destiny</h1>
+            <p>생년월일을 입력하고 당신의 우주적인 운세를 확인하세요.</p>
+        </header>
+
+        <section class="input-section">
+            <form id="horoscope-form">
+                <div class="input-group">
+                    <label for="birthdate">생년월일 (Birth Date)</label>
+                    <input type="date" id="birthdate" required aria-label="생년월일 선택">
+                </div>
+                <button type="submit" class="btn-glow">운세 보기</button>
+            </form>
+        </section>
+
+        <section id="result-section" class="result-section hidden">
+            <div class="zodiac-card">
+                <div class="zodiac-icon" id="zodiac-icon">♈</div>
+                <h2 id="zodiac-name">양자리</h2>
+                <p class="date-range" id="zodiac-dates">3.21 - 4.19</p>
+                
+                <div class="horoscope-content">
+                    <h3>🌟 오늘의 운세</h3>
+                    <p id="horoscope-text">여기에 운세 내용이 표시됩니다.</p>
+                </div>
+                
+                <button id="reset-btn" class="btn-glow outline">다시 보기</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
